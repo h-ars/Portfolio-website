@@ -1,0 +1,264 @@
+@media (max-width: 1251px) {
+    .projectCards {
+        flex-direction: column;
+    }
+
+    .project img{
+        width: 440px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 885px) {
+    .cardsDiv {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    #about {
+        gap: 3rem;
+    }
+
+    .aboutText {
+        width: 225px;
+    }
+
+    .cards p{
+        font-size: 14px;
+    }
+
+    .cards {
+        width: 220px;
+    }
+
+    .aboutPic img{
+        height: 450px;
+    }
+
+    .profilePic img{
+        height: 310px;
+    }
+
+    #proText{
+        font-size: 36px;
+    }
+
+    #proPara1{
+        font-size: 14px;
+    }
+
+    #proPara2{
+        font-size: 22.25px;
+    }
+
+    #contactBtn{
+        font-size: 16px;
+        padding: 4px 14px;
+    }
+
+    .socialIcons{
+        font-size: 30px;
+        margin: 0 6px;
+    }
+
+    .profileBtnContainer{
+        margin-top: 4px;
+    }
+
+    .project h2{
+        font-size: 18px;
+    }
+
+    #desktopNav{
+        display: none;
+    }
+
+    #hamNav{
+        display: inline-flex;
+        gap: 50vw;
+    }
+
+    .hamNavLinks{
+        background-color: rgba(0, 0, 0, 0.55);
+        width: fit-content;
+    }
+
+    .hamNavLinks a{
+        font-size: 0.95rem;
+        color: white;
+    }
+
+    .hamNavLinks :hover{
+        text-decoration: underline;
+        color: white;
+        text-underline-offset: 8px;
+    }
+}
+
+@media (max-width: 645px) {
+    .logo img {
+        width: 85px;
+    }
+
+    #profile {
+        flex-direction: column;
+    }
+
+    .profileText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        height: 45vh;
+    }
+
+    footer div{
+        height: 35vh;
+        display: flex;
+    }
+
+    .footerLinks{
+        height: 35vh;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    #about{
+        flex-direction: column-reverse;
+    }
+
+    .aboutText{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutPic img{
+        height: 350px;
+        width: 300px;
+        object-fit: cover;
+        object-position: 50% 5%;
+    }
+
+    .cardContainer{
+        width: 75vw;
+        display: inline-flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 18px;
+    }
+
+    .project img{
+        width: 340px;
+        height: 300px;
+    }
+
+    .sclsDiv{
+        font-size: 14px;
+    }
+
+    .sclsDiv i{
+        font-size: 28px;
+    }
+
+    .contactDiv{
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .profilePic img{
+        height: 275px;
+    }
+
+    #proText{
+        font-size: 30px;
+    }
+
+    #proPara2{
+        font-size: 19px;
+    }
+
+    .aboutText{
+        width: 90vw;
+    }
+
+    .aboutPic img{
+        height: 315px;
+        width: 265px;
+        object-fit: cover;
+        object-position: 50% 5%;
+    }
+
+    .cardContainer{
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+    }
+
+    .cards{
+        margin: 0;
+        width: 90vw;
+    }
+
+    .cardsDiv{
+        gap: 2rem;
+    }
+
+    .skillCards{
+        width: fit-content;
+        padding: 14px;
+    }
+
+    .articleContainer{
+        height: fit-content;
+        width: 260px;
+    }
+
+    article h3{
+        font-size: 16px;
+    }
+
+    .tag{
+        font-size: 13px;
+    }
+
+    .cardTitle{
+        font-size: 22px;
+    }
+
+    .project img{
+        height: 220px;
+        width: 260px;
+    }
+
+    .project{
+        padding: 14px;
+    }
+
+    .projectBtns{
+        margin-top: 10px;
+    }
+
+    .contactDiv{
+        flex-direction: column;
+        gap: 0.65rem;
+        padding: 10px 16px;
+    }
+
+    footer p{
+        font-size: 11px;
+    }
+}
+
+

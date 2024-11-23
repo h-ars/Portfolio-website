@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div id="desktopNav">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="logo of website">
+                </div>
+                <div>
+                    <ul class="navLinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contactsct">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <nav id="hamNav">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="logo of website">
+                </div>
+                <div class="hamNavMenu">
+                    <div class="hamNavIcon" onclick="toggleMenu()">
+                        <i id="hamNavI" class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hamNavLinks hide">
+                            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                            <li><a href="#contactsct" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="profilePic">
+                <img src="./assets/pp.jpg" alt="Harsh Bhardwaj Profile Photo">
+            </div>
+            <div class="profileText">
+                <p id="proPara1">Hello, I am</p>
+                <h1 id="proText">Harsh Bhardwaj</h1>
+                <p id="proPara2">Frontend Developer</p>
+                <div class="profileBtnContainer">
+                    <button class="socialIcons" id="pbc1" onclick="window.open('https://github.com/h-ars', '_blank')">
+                        <i class="fa-brands fa-github"></i>
+                    </button>
+                    <button class="socialIcons" onclick="window.open('https://linkedin.com/in/harsh-bhardwaj-23589b298', '_blank')">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                    <button id="contactBtn" onclick="location.href='./#contact'">Contact Info</button>
+                </div>                
+            </div>
+        </section>
+        <section id="about">
+            <div class="aboutText">
+                <p id="proPara1">Get to know more</p>
+                <h1 id="proText">About me</h1>
+                <div class="cardContainer">
+                    <div class="cards">
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <h3>Apprenticeship</h3>
+                        <p>1+ year</p>
+                        <p>Frontend Development</p>
+                    </div>
+                    <div class="cards">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <h3>Education</h3>
+                        <p>Bachelors in</p>
+                        <p>Computer Application</p>
+                    </div>
+                </div>
+                <div class="description">
+                    I am a curious and driven individual passionate about learning and self-improvement. Motivated by growth, I embrace challenges and seek opportunities to create meaningful, impactful solutions.
+                </div>
+            </div>
+            <div class="aboutPic">
+                <img src="./assets/about-oic.jpg" alt="profile picture">
+            </div>
+        </section>
+        <section id="skills">
+            <p id="proPara1">My Arsenal of</p>
+            <h1 id="proText">Skills</h1>
+            <div class="cardsDiv">
+                <div class="skillCards">
+                    <h2 class="cardTitle">Frontend Development</h2>
+                    <div class="articleContainer">
+                        <article>
+                            <i class="fa-brands fa-gg-circle"></i>
+                            <h3>HTML</h3>
+                            <p class="tag">Experienced</p>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-gg-circle"></i>
+                            <h3>CSS</h3>
+                            <p class="tag">Experienced</p>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-gg-circle"></i>
+                            <h3>JavaScript</h3>
+                            <p class="tag">Intermediate</p>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-gg-circle"></i>
+                            <h3>Tailwind CSS</h3>
+                            <p class="tag">Intermediate</p>
+                        </article>
+                    </div>    
+                </div>
+                <div class="skillCards">
+                    <h2 class="cardTitle">Acquiring...</h2>
+                    <div class="articleContainer">
+                        <article>
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <h3>Node JS</h3>
+                            <p class="tag">Backend</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <h3>PostgreSQL</h3>
+                            <p class="tag">Database</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <h3>React JS</h3>
+                            <p class="tag">Frontend</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <h3>Git</h3>
+                            <p class="tag">Version Control</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <p id="proPara1">Browse My Recent</p>
+            <h1 id="proText">Projects</h1>
+            <div class="projectCards">
+                <div class="project">
+                    <img src="./assets/exchange.jpeg" alt="Currency Converter - Project photo">
+                    <h2>Currency Converter</h2>
+                    <div class="btnBox">
+                        <button class="projectBtns" onclick="window.open('https://github.com/h-ars/Currency-Converter', '_blank')">Github</button>
+                        <button class="projectBtns" onclick="window.open('https://h-ars.github.io/Currency-Converter/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/tictactoe.jpg" alt="Tic Tac Toe Game - Project photo">
+                    <h2>Tic Tac Toe Game</h2>
+                    <div class="btnBox">
+                        <button class="projectBtns" onclick="window.open('https://github.com/h-ars/tic-tac-toe', '_blank')">Github</button>
+                        <button class="projectBtns" onclick="window.open('https://h-ars.github.io/tic-tac-toe/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <img id="rps" src="./assets/rpsgame.jpeg" alt="Rock Paper Scissors Game - Project photo">
+                    <h2>Rock Paper Scissors</h2>
+                    <div class="btnBox">
+                        <button class="projectBtns" onclick="window.open('https://github.com/h-ars/rock-paper-scissors-game', '_blank')">Github</button>
+                        <button class="projectBtns" onclick="window.open('https://h-ars.github.io/rock-paper-scissors-game/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactsct">
+            <p id="proPara1">Get in Touch</p>
+            <h1 id="proText">at</h1>
+            <div class="contactDiv">
+                <div class="sclsDiv">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    businessHarsh@gmail.com
+                </div>
+                <div class="sclsDiv">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul class="footerLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <p>Copyright © 2024 Harsh Bhardwaj. All Rights Reserved.</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
